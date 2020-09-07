@@ -20,16 +20,16 @@ export const initialTodos = {
 
 export const todoReducer = (state, action) => {
   switch (action.type) {
-    case "ADD_TODO":
-      return {
-        ...state,
-        todos: {
-          ...state.todos,
-          item: action.payload,
-          completed: false,
-          id: new Date(),
-        },
-      };
+    // case "ADD_TODO":
+    //   return {
+    //     ...state,
+    //     todos: {
+    //       ...state.todos,
+    //       item: action.payload,
+    //       completed: false,
+    //       id: new Date(),
+    //     },
+    //   };
     default:
       return state;
   }
