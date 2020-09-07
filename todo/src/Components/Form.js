@@ -1,19 +1,25 @@
-import React from 'react';
+import React, { useState, useReducer } from "react";
 
+import { initialTodos, todoReducer } from "../reducers/todoReducer";
 
-function Form() {
+const Form = () => {
+  const [inputValue, setInputValue] = useState("");
+  const [state, dispatch] = useReducer(todoReducer, initialTodos);
+
   return (
-    <form 
-      style={{"margin" : "20px"}}>
-      {/* onSubmit="" */}
+    <form style={{ margin: "20px" }}>
       <input
         type="text"
-        name="newTask">
-        {/* value="" */}
-        {/* onChange="" */}
-        </input>
-        <button>Add!</button>
+        name="newTask"
+        onChange={(e) => setInputValue(e.target.value)}
+      ></input>
+      <button
+        onClick={() => dispatch({ type: "ADD_TODO", payload: inputValue })}
+      >
+        Add!
+      </button>
     </form>
-  )
-}
+  );
+};
+
 export default Form;
