@@ -35,10 +35,10 @@
 
   ### Task 2a: Build a simple reducer and initial state
 
-  - [x] In a folder called `reducers` add a reducer file and build out a simple reducer with just a default return for now
+  - [] In a folder called `reducers` add a reducer file and build out a simple reducer with just a default return for now
     - `todoReducer`
 
-  - [x] In the same file, build your initial state object that has a list of todos with the following shape:
+  - [] In the same file, build your initial state object that has a list of todos with the following shape:
     - `initialTodos`
 
   ```js
