@@ -35,8 +35,8 @@
 
   ### Task 2a: Build a simple reducer and initial state
 
-  - [x] In a folder called `reducers` add a reducer file and build out a simple reducer with just a default return for now
-  - [x] In the same file, build your initial state object that has a list of todos with the following shape:
+  - [] In a folder called `reducers` add a reducer file and build out a simple reducer with just a default return for now
+  - [] In the same file, build your initial state object that has a list of todos with the following shape:
 
   ```js
   {
@@ -53,14 +53,14 @@
 
   You get to choose how you want to set up your components. Please don't just do this all inside App. I know it is a small and simple project, but you will do yourself a great service by setting your app up as if it were going to be a larger application.
 
-  - [x] Using the `reducer` hook, set up state in your component. Think about what you'll need in order to use the reducer hook, and think about what it returns.
-  - [x] Now render your list of todos from your reducer in your app
+  - [] Using the `reducer` hook, set up state in your component. Think about what you'll need in order to use the reducer hook, and think about what it returns.
+  - [] Now render your list of todos from your reducer in your app
 
   ...............................................................................................................................................................................................................................
 
   ## Task 2c: Adding todos
 
-  - [x] Build a form to add todos to your list
+  - [] Build a form to add todos to your list
   - Build a function that will dispatch an action to add a new todo
   - Write the `case` in your reducer for adding a todo (You can create a unique id with `new Date()`)
 
