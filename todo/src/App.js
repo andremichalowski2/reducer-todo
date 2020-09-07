@@ -1,24 +1,16 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { useReducer } from 'react';
+import { initialState } from './reducers/reducer'
+import { reducer } from './reducers/reducer'
 import './App.css';
 
 function App() {
+  const [state, dispatch] = useReducer(reducer, initialState);
+  console.log(state[0].item);
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {state.map((item, index) => {
+        return <h1>List Item: {state[index].item}</h1>
+      })}
     </div>
   );
 }
